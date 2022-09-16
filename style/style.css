@@ -1,27 +1,16 @@
 #game-bg {
 background-color: rgba(0, 0, 0, 0.24);
-height: auto;
-width: auto;
-padding: 40px 0px 40px 0px;
+padding: 10px 0 10px;
+border: black 2px solid;
 }
 #character-box {
 display: flex;
-justify-content: space-evenly;
+max-width: 85%;
+height: 100%;
 margin: 0 auto;
-}
-#player {
-height: 500px;
-width: 500px;
-background-color: red;
+padding: 0 0 10% 0;
+justify-content: space-evenly;
 text-align: center;
-}
-#enemy {
-height: 500px;
-width: 500px;
-background-color: rgb(0, 247, 12);
-text-align: center;
-}
-#attacks {
-    display: flex;
-    margin: 0 auto;
+position: relative;
+
 }
