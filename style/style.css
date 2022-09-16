@@ -5,12 +5,22 @@ border: black 2px solid;
 }
 #character-box {
 display: flex;
-max-width: 85%;
-height: 100%;
+max-width: 50%;
 margin: 0 auto;
-padding: 0 0 10% 0;
 justify-content: space-evenly;
 text-align: center;
 position: relative;
-
+}
+#attacks {
+    position: sticky;
+    margin-top: 10%;
+    bottom: 0;
+}
+#player-img {
+    height: auto;
+    width: 45%;
+}
+#enemy-img {
+    height: auto;
+    width: 100%;
 }
