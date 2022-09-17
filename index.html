@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slap Game</title>
-    <script src="index.js"></script>
+   
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
@@ -16,18 +16,19 @@
                 <div id="player">
                     <h2>Mario</h2>
                     <img id="player-img" src="./style/Masthead_Mario_HeroPose-updated2021.b19a16e5.ed4a1562.png" alt="">
-                    <p>HP: 0</p>
+                  <div>Health Points: </div><p id="playerHP">100</p>
                 <div id="attacks">
-                    <button>Slap</button><button>Punch</button><button>Kick</button>
+                    <button id="slap" onclick="slap()">Slap</button><button onclick="punch()">Punch</button><button onclick="kick()">Kick</button>
                 </div>
             </div>
                 <div id="enemy">
                     <h2>Bowser</h2>
                     <img id="enemy-img" src="./style/Bowser_Stock_Art_2021.png" alt="">
-                    <h3>HP: 0</h3>
+                    <div>Health Points: </div><p id="enemyHP">100</p>
                 </div>
             </div>
         </div>
+        <script src="index.js"></script>
     </main>
 </body>
 </html>
