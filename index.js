@@ -39,11 +39,13 @@ function healthCheck () {
         document.getElementById("playerHP").innerHTML = playerHP
         document.getElementById("enemyHP").innerHTML = enemyHP
         alert("You lose!")
+        gameReset()
     }
     else {
         document.getElementById("playerHP").innerHTML = playerHP
         document.getElementById("enemyHP").innerHTML = enemyHP
         alert ("You defeated!")
+        gameReset()
     }
 }
 
@@ -58,4 +60,6 @@ function bossAttack() {
 function gameReset() {
     document.getElementById("playerHP").innerHTML = "100"
     document.getElementById("enemyHP").innerHTML = "100"
+    enemyHP = 100
+    playerHP = 100
 }
